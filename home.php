@@ -1,5 +1,4 @@
 <?php 
-
   session_start(); 
 
   if (!isset($_SESSION['username'])) {
@@ -22,30 +21,16 @@
 </head>
 <body>
 	<div id="header">
-		<?php if (isset($_SESSION['success'])) : ?>
-      <div class="error success" >
-      	<br><br>
-      	<h3>
-          <?php 
-          	echo $_SESSION['success']; 
-          	unset($_SESSION['success']);
-          ?>
-      	</h3>
-      </div>
-  	<?php endif ?>
-
-    <!-- logged in user information -->
-    <?php  if (isset($_SESSION['username'])) : ?>
-    	<br><br>
-    	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-    <?php endif ?>
+		<br><center><h3>Welcome Admin</h3></center>
 		
 	</div>
 
 	<div id="sidebar">
 	<ul>
 		<li><a href="add student.html"><button value="Add Student">Add Student</button> </a></li>
-		<li><a href="index.php?logout='1'"> <button value="logout">logout</button> </a> </li>
+		<li>  </li>
+		<li>  </li>
+		<li> <button value="logout">Log Out</button>  </li>
 	</ul>
 	</div>
 
