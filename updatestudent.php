@@ -89,7 +89,7 @@ if (isset($_POST['update']))
 	if ($query==true) 
 	{
 		echo '<script type="text/javascript"> alert("Data Updated")</script>';
-		header("location:home.php");
+		header("location:index.php");
 	}
 	else 
 	{
