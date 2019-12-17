@@ -25,7 +25,7 @@ if ($conn->query($sql) === TRUE)
 
 {
 
-    header("location:home.php");
+    header("location:index.php");
 
 } 
 
